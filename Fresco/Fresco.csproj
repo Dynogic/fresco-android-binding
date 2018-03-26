@@ -38,17 +38,32 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\Additions..cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Jars\AboutJars.txt" />
-    <None Include="Additions\AboutAdditions.txt" />
     <LibraryProjectZip Include="Jars\fresco-1.8.1.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
-    <TransformFile Include="Transforms\EnumFields.xml" />
-    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fresco.Core\Fresco.Core.csproj">
+      <Project>{848ee635-2546-44e5-9c31-7cd371a1cec2}</Project>
+      <Name>Fresco.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.Drawee\Fresco.Drawee.csproj">
+      <Project>{81c9e565-aed0-4930-a9a8-efb10c87d750}</Project>
+      <Name>Fresco.Drawee</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline.Base\Fresco.ImagePipeline.Base.csproj">
+      <Project>{613a5c51-590f-428d-ac85-a0bdc4bf5e5e}</Project>
+      <Name>Fresco.ImagePipeline.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline\Fresco.ImagePipeline.csproj">
+      <Project>{b7caa5c0-4cfb-4ba7-9498-8ab47a5d8dc3}</Project>
+      <Name>Fresco.ImagePipeline</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
