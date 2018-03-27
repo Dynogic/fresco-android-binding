@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C09C4CD-36F7-48F5-9757-A1C32DFC64EC}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fresco.Animated.Drawable</RootNamespace>
+    <AssemblyName>Fresco.Animated.Drawable</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\animated-drawable-1.8.1.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fresco.Core\Fresco.Core.csproj">
+      <Project>{848ee635-2546-44e5-9c31-7cd371a1cec2}</Project>
+      <Name>Fresco.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.Drawee\Fresco.Drawee.csproj">
+      <Project>{81c9e565-aed0-4930-a9a8-efb10c87d750}</Project>
+      <Name>Fresco.Drawee</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline.Base\Fresco.ImagePipeline.Base.csproj">
+      <Project>{613a5c51-590f-428d-ac85-a0bdc4bf5e5e}</Project>
+      <Name>Fresco.ImagePipeline.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline\Fresco.ImagePipeline.csproj">
+      <Project>{b7caa5c0-4cfb-4ba7-9498-8ab47a5d8dc3}</Project>
+      <Name>Fresco.ImagePipeline</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
