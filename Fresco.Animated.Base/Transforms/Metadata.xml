@@ -1,0 +1,3 @@
+﻿<metadata>
+  <remove-node path="/api/package[@name='com.facebook.fresco.animation.factory']/class[@name='ExperimentalBitmapAnimationDrawableFactory']" />
+</metadata>
