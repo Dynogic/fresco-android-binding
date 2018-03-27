@@ -103,17 +103,49 @@
     <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Fresco.Animated.Base\Fresco.Animated.Base.csproj">
+      <Project>{4aac3a69-27ff-41de-af8b-9255d9e665e6}</Project>
+      <Name>Fresco.Animated.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.Animated.Drawable\Fresco.Animated.Drawable.csproj">
+      <Project>{7c09c4cd-36f7-48f5-9757-a1c32dfc64ec}</Project>
+      <Name>Fresco.Animated.Drawable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.Animated.Gif\Fresco.Animated.Gif.csproj">
+      <Project>{c1bd2f66-0eea-4232-b533-fceb7419d125}</Project>
+      <Name>Fresco.Animated.Gif</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.Animated.WebP\Fresco.Animated.WebP.csproj">
+      <Project>{8d38cd50-90f1-4a3f-bd9a-988180a8d7f9}</Project>
+      <Name>Fresco.Animated.WebP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Fresco.Bolts\Fresco.Bolts.csproj">
       <Project>{bc051157-fdfa-4bff-ad8b-d642224e2936}</Project>
       <Name>Fresco.Bolts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.Core\Fresco.Core.csproj">
+      <Project>{848ee635-2546-44e5-9c31-7cd371a1cec2}</Project>
+      <Name>Fresco.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Fresco.Drawee\Fresco.Drawee.csproj">
       <Project>{81c9e565-aed0-4930-a9a8-efb10c87d750}</Project>
       <Name>Fresco.Drawee</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline.Base\Fresco.ImagePipeline.Base.csproj">
+      <Project>{613a5c51-590f-428d-ac85-a0bdc4bf5e5e}</Project>
+      <Name>Fresco.ImagePipeline.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline\Fresco.ImagePipeline.csproj">
+      <Project>{b7caa5c0-4cfb-4ba7-9498-8ab47a5d8dc3}</Project>
+      <Name>Fresco.ImagePipeline</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Fresco.SoLoader\Fresco.SoLoader.csproj">
       <Project>{6829b453-447e-41a0-a867-7957cade42bc}</Project>
       <Name>Fresco.SoLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.WebP\Fresco.WebP.csproj">
+      <Project>{15924f0a-d30e-46f9-9969-dbcdd68e5a4e}</Project>
+      <Name>Fresco.WebP</Name>
     </ProjectReference>
     <ProjectReference Include="..\Fresco\Fresco.csproj">
       <Project>{fa9faba9-bb4c-4074-ba2c-f2c54d7b1145}</Project>

@@ -137,6 +137,9 @@ namespace Fresco.Test
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f04000a
+			public const int basic_image = 2130968586;
+			
 			// aapt resource value: 0x7f040000
 			public const int center = 2130968576;
 			
@@ -164,11 +167,20 @@ namespace Fresco.Test
 			// aapt resource value: 0x7f040008
 			public const int focusCrop = 2130968584;
 			
-			// aapt resource value: 0x7f04000a
-			public const int my_image_view = 2130968586;
+			// aapt resource value: 0x7f04000e
+			public const int gif_animated = 2130968590;
 			
 			// aapt resource value: 0x7f040009
 			public const int none = 2130968585;
+			
+			// aapt resource value: 0x7f04000d
+			public const int webp_animated = 2130968589;
+			
+			// aapt resource value: 0x7f04000b
+			public const int webp_static = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int webp_translucent = 2130968588;
 			
 			static Id()
 			{
