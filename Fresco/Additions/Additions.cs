@@ -20,14 +20,16 @@
             return SetUri2(p0);
         }
 
-        protected override global::Com.Facebook.Datasource.IDataSource GetDataSourceForRequest(global::Java.Lang.Object p0, global::Java.Lang.Object p1, global::Com.Facebook.Drawee.Controller.AbstractDraweeControllerBuilder.CacheLevel p2)
+/*        protected override global::Com.Facebook.Datasource.IDataSource GetDataSourceForRequest(global::Com.Facebook.Drawee.Interfaces.IDraweeController p0, string p1, global::Java.Lang.Object p2, global::Java.Lang.Object p3, global::Com.Facebook.Drawee.Controller.AbstractDraweeControllerBuilder.CacheLevel p4)
         {
             return GetDataSourceForRequest(
-                Android.Runtime.Extensions.JavaCast<Com.Facebook.Imagepipeline.Request.ImageRequest>(p0),
+                p0,
                 p1,
-                p2
+                Android.Runtime.Extensions.JavaCast<Com.Facebook.Imagepipeline.Request.ImageRequest>(p2),
+                p3,
+                p4
             );
-        }
+        }*/
 
         protected override Com.Facebook.Drawee.Controller.AbstractDraweeController ObtainController() => ObtainController2();
 
@@ -51,5 +53,9 @@
         {
             ReleaseImage(Android.Runtime.Extensions.JavaCast<Com.Facebook.Common.References.CloseableReference>(image));
         }
+
+/*        public override unsafe global::System.Collections.Generic.IDictionary<string, global::Java.Lang.Object> ObtainExtrasFromImage(Java.Lang.Object info) {
+            return ObtainExtrasFromImage(Android.Runtime.Extensions.JavaCast<global::Com.Facebook.Imagepipeline.Image.IImageInfo>(info));
+        }*/
     }
 }

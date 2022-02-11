@@ -13,7 +13,9 @@
     <AssemblyName>Fresco</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidCodegenTarget>XamarinAndroid</AndroidCodegenTarget>
+    <AndroidClassParser>class-parse</AndroidClassParser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,9 +44,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\fresco-1.8.1.aar" />
-  </ItemGroup>
-  <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +63,17 @@
       <Project>{b7caa5c0-4cfb-4ba7-9498-8ab47a5d8dc3}</Project>
       <Name>Fresco.ImagePipeline</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Fresco.NativeImageFilters\Fresco.NativeImageFilters.csproj">
+      <Project>{5151c676-1ad9-4ac9-a574-5df99d0ab3e5}</Project>
+      <Name>Fresco.NativeImageFilters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.NativeImageTranscoder\Fresco.NativeImageTranscoder.csproj">
+      <Project>{5fadac74-cbae-4d42-9374-bd19a52a4912}</Project>
+      <Name>Fresco.NativeImageTranscoder</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\fresco-1.14.0.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

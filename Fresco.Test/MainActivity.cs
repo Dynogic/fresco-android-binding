@@ -3,6 +3,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Net;
 using Com.Facebook.Drawee.View;
+using Com.Facebook.Imagepipeline.Core;
+using Com.Facebook.Drawee.Backends.Pipeline;
 
 namespace Fresco.Test
 {
@@ -13,7 +15,17 @@ namespace Fresco.Test
         {
             base.OnCreate(savedInstanceState);
 
-            Com.Facebook.Drawee.Backends.Pipeline.Fresco.Initialize(this);
+            Com.Facebook.Drawee.Backends.Pipeline.Fresco.Initialize(
+                this/*,
+                ImagePipelineConfig.NewBuilder(this)
+                    .SetMemoryChunkType(MemoryChunkType.BufferMemory)
+                    .SetImageTranscoderType(ImageTranscoderType.JavaTranscoder)
+                    .Experiment()
+                    .SetNativeCodeDisabled(true)
+                    .Build(),
+                null,
+                false*/
+            );
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);

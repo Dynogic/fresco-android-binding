@@ -12,8 +12,9 @@
     <RootNamespace>Fresco.ImagePipeline.OkHttp</RootNamespace>
     <AssemblyName>Fresco.ImagePipeline.OkHttp</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidCodegenTarget>XamarinAndroid</AndroidCodegenTarget>
+    <AndroidClassParser>class-parse</AndroidClassParser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,14 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fresco.ImagePipeline.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\dev\disa\ComponentsJavaBindings\Fresco.ImagePipeline.Base.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Android" />
-    <Reference Include="SquareUp">
-      <HintPath>Libs\SquareUp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -51,7 +45,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\imagepipeline-okhttp-1.8.1.aar" />
+    <LibraryProjectZip Include="Jars\imagepipeline-okhttp3-1.14.0.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
@@ -62,6 +56,10 @@
     <ProjectReference Include="..\Fresco.Core\Fresco.Core.csproj">
       <Project>{848ee635-2546-44e5-9c31-7cd371a1cec2}</Project>
       <Name>Fresco.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fresco.ImagePipeline.Base\Fresco.ImagePipeline.Base.csproj">
+      <Project>{613a5c51-590f-428d-ac85-a0bdc4bf5e5e}</Project>
+      <Name>Fresco.ImagePipeline.Base</Name>
     </ProjectReference>
     <ProjectReference Include="..\Fresco.ImagePipeline\Fresco.ImagePipeline.csproj">
       <Project>{b7caa5c0-4cfb-4ba7-9498-8ab47a5d8dc3}</Project>
