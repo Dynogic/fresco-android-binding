@@ -4,4 +4,8 @@
   <remove-node path="/api/package[@name='com.facebook.imagepipeline.memory']" />
   <remove-node path="/api/package[@name='com.facebook.imagepipeline.cache']" />
   <remove-node path="/api/package[@name='com.facebook.imagepipeline.datasource']" />
+  <remove-node path="/api/package[@name='com.facebook.imagepipeline.debug']" />
+<!--  <remove-node path="/api/package[@name='com.facebook.imagepipeline.memory']/interface[@name='PoolBackend']" />-->
+<!--	<attr path="/api/package[@name='com.facebook.imagepipeline.memory']/interface[@name='PoolBackend']"
+	  name="visibility">internal</attr>-->
 </metadata>

@@ -13,7 +13,9 @@
     <AssemblyName>Fresco.Animated.Drawable</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidCodegenTarget>XamarinAndroid</AndroidCodegenTarget>
+    <AndroidClassParser>class-parse</AndroidClassParser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,9 +43,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\animated-drawable-1.8.1.aar" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Fresco.Core\Fresco.Core.csproj">
       <Project>{848ee635-2546-44e5-9c31-7cd371a1cec2}</Project>
       <Name>Fresco.Core</Name>
@@ -60,6 +59,9 @@
       <Project>{b7caa5c0-4cfb-4ba7-9498-8ab47a5d8dc3}</Project>
       <Name>Fresco.ImagePipeline</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\animated-drawable-1.14.0.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

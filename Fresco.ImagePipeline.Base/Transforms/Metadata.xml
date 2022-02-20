@@ -1,0 +1,7 @@
+﻿<metadata>
+<!--	<attr
+    path="/api/package[@name='com.facebook.imagepipeline.base']/class[@name='DefaultDiskStorage']/method[@name='getEntries']"
+    name="managedReturn">
+		System.Collections.Generic.ICollection&lt;Com.Facebook.Cache.Disk.IDiskStorageEntry&gt;
+	</attr>-->
+</metadata>
